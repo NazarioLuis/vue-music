@@ -1,7 +1,7 @@
 <template>
   <div class="col s12" id="breadcrumbs" v-if="breadCrumbs">
     <router-link v-for="item of breadCrumbs"
-                 :to="item.to" class="breadcrumb">
+                 :to="item.to" class="breadcrumb" :key="item.name">
       {{item.text}}
     </router-link>
   </div>

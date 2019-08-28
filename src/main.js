@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Axios from 'axios'
 import App from './App.vue'
-
-import 'materialize-css'
+import M from 'materialize-css'
 import 'materialize-css/dist/css/materialize.css'
 
 Vue.prototype.$http = Axios.create({
@@ -15,6 +14,8 @@ Vue.prototype.$http = Axios.create({
 });
 
 Vue.prototype.$audio = new Audio(null);
+
+Vue.prototype.M = M;
 
 Vue.config.productionTip = false
 

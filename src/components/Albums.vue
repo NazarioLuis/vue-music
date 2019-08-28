@@ -2,7 +2,7 @@
   <div class="row">
     <Header titulo="Buscador de Albums" icono="album"/>
     <CampoBuscador @filtro="recuperarPorFiltro"/>
-    <Album v-for="album of albums" :album="album"/>
+    <Album v-for="album of albums" :album="album" :key="album.id"/>
   </div>
 </template>
 

@@ -11,7 +11,7 @@
     name: 'app',
     router,
     mounted() {
-      M.AutoInit()
+      this.M.AutoInit()
     }
   }
 </script>
