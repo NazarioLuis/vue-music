@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Axios from 'axios'
 import App from './App.vue'
 import M from 'materialize-css'
-import 'materialize-css/dist/css/materialize.css'
+import "materialize-css/dist/css/materialize.min.css"
 
 Vue.prototype.$http = Axios.create({
   baseURL: 'https://deezerdevs-deezer.p.rapidapi.com',
